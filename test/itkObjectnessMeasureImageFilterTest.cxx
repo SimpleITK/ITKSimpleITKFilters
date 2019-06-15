@@ -70,7 +70,7 @@ int itkObjectnessMeasureImageFilterTest(int argc, char *argv[])
   writer->SetFileName( outputImageFileName );
   writer->Update();
 
-  //EXERCISE_BASIC_OBJECT_METHODS( FilterType, ObjectnessMeasureImageFilter );
+  //ITK_EXERCISE_BASIC_OBJECT_METHODS( FilterType, ObjectnessMeasureImageFilter );
 
   return EXIT_SUCCESS;
 }
