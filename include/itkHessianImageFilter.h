@@ -83,7 +83,7 @@ public:
 #endif
 
 protected:
-  HessianImageFilter(void);
+  HessianImageFilter();
 
   void
   DynamicThreadedGenerateData(const OutputImageRegionType & outputRegionForThread) override;

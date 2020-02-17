@@ -33,7 +33,7 @@ namespace itk
  */
 
 template <typename TInputImage, typename TOutputImage>
-HessianImageFilter<TInputImage, TOutputImage>::HessianImageFilter(void)
+HessianImageFilter<TInputImage, TOutputImage>::HessianImageFilter()
 {
   this->DynamicMultiThreadingOn();
 }
