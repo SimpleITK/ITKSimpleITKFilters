@@ -38,8 +38,7 @@ ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::ObjectnessMeasureImageF
 {}
 
 template <typename TInputImage, typename TOutputImage>
-ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::~ObjectnessMeasureImageFilter()
-{}
+ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::~ObjectnessMeasureImageFilter() = default;
 
 
 template <typename TInputImage, typename TOutputImage>

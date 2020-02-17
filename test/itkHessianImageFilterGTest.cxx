@@ -31,8 +31,8 @@ namespace
 class HessianImageFilterFixture : public ::testing::Test
 {
 public:
-  HessianImageFilterFixture() {}
-  ~HessianImageFilterFixture() override {}
+  HessianImageFilterFixture() = default;
+  ~HessianImageFilterFixture() override = default;
 
 protected:
   void
