@@ -29,12 +29,7 @@ namespace itk
 
 template <typename TInputImage, typename TOutputImage>
 ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::ObjectnessMeasureImageFilter()
-  : m_Alpha(0.5)
-  , m_Beta(0.5)
-  , m_Gamma(5.0)
-  , m_ObjectDimension(1)
-  , m_BrightObject(true)
-  , m_ScaleObjectnessMeasure(true)
+
 {}
 
 template <typename TInputImage, typename TOutputImage>
