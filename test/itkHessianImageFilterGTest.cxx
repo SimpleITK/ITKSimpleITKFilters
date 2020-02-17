@@ -59,7 +59,7 @@ protected:
     static const unsigned int imageSize = 25;
 
     static typename ImageType::Pointer
-    CreateImage(void)
+    CreateImage()
     {
       typename ImageType::Pointer image = ImageType::New();
 
@@ -74,7 +74,7 @@ protected:
     }
 
     static typename ImageType::Pointer
-    CreateGaussianImage(void)
+    CreateGaussianImage()
     {
 
       using GaussianSourceType = itk::GaussianImageSource<ImageType>;
