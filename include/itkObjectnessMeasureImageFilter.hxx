@@ -30,7 +30,7 @@ namespace itk
 template <typename TInputImage, typename TOutputImage>
 ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::ObjectnessMeasureImageFilter()
 
-{}
+  = default;
 
 template <typename TInputImage, typename TOutputImage>
 ObjectnessMeasureImageFilter<TInputImage, TOutputImage>::~ObjectnessMeasureImageFilter() = default;
