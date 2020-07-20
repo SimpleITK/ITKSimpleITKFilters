@@ -1,9 +1,7 @@
 ITKSimpleITKFilters
 =================================
 
-
-.. image:: https://dev.azure.com/SimpleITK-DevOps/SimpleITK/_apis/build/status/SimpleITK.ITKSimpleITKFilters?branchName=master
-    :target: https://dev.azure.com/SimpleITK-DevOps/SimpleITK/_build?definitionId=14&_a=summary
+.. image:: https://github.com/InsightSoftwareConsortium/ITKSimpleITKFilters/workflows/Build,%20test,%20package/badge.svg
     :alt:    Build Status
 
 .. image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
