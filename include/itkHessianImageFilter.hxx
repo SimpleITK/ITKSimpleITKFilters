@@ -19,7 +19,6 @@
 #define itkHessianImageFilter_hxx
 
 
-#include "itkHessianImageFilter.h"
 
 #include "itkImageRegionConstIterator.h"
 #include "itkImageRegionIterator.h"

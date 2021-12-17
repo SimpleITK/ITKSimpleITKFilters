@@ -18,7 +18,6 @@
 #ifndef itkObjectnessMeasureImageFilter_hxx
 #define itkObjectnessMeasureImageFilter_hxx
 
-#include "itkObjectnessMeasureImageFilter.h"
 #include "itkHessianImageFilter.h"
 #include "itkHessianToObjectnessMeasureImageFilter.h"
 #include "itkProgressAccumulator.h"
