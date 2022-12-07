@@ -6,7 +6,7 @@
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
- *         http://www.apache.org/licenses/LICENSE-2.0.txt
+ *         https://www.apache.org/licenses/LICENSE-2.0.txt
  *
  *  Unless required by applicable law or agreed to in writing, software
  *  distributed under the License is distributed on an "AS IS" BASIS,
@@ -40,8 +40,8 @@ namespace itk
  * repositioned to DestinationIndex, then the output will just be
  * a copy of the input.
  *
- * This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the
- * need to copy the destination pixels to the output.
+ * This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing
+ * the need to copy the destination pixels to the output.
  *
  * When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter
  * specifies which axes in the destination image are set to 1 when copying the region or filling with a constant.
@@ -60,7 +60,7 @@ template <typename TInputImage, typename TSourceImage = TInputImage, typename TO
 class ITK_TEMPLATE_EXPORT NPasteImageFilter : public InPlaceImageFilter<TInputImage, TOutputImage>
 {
 public:
-  ITK_DISALLOW_COPY_AND_ASSIGN(NPasteImageFilter);
+  ITK_DISALLOW_COPY_AND_MOVE(NPasteImageFilter);
 
   /** Standard class type aliases. */
   using Self = NPasteImageFilter;

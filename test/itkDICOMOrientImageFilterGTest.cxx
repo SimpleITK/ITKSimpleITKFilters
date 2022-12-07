@@ -6,7 +6,7 @@
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
- *         http://www.apache.org/licenses/LICENSE-2.0.txt
+ *         https://www.apache.org/licenses/LICENSE-2.0.txt
  *
  *  Unless required by applicable law or agreed to in writing, software
  *  distributed under the License is distributed on an "AS IS" BASIS,
@@ -450,8 +450,15 @@ TEST(DICOMOrientation, DirectionCosinesToOrientation)
   d(1, 1) = 1;
   d(0, 2) = 1;
   EXPECT_EQ(OE::SPL, DICOMOrientation::DirectionCosinesToOrientation(d));
-}
 
+  const double data[] = {0.5986634407395047, 0.22716302314740483, -0.768113953548866,
+                         0.5627936241740271, 0.563067040943212, 0.6051601804419384,
+                         0.5699696670095713, -0.794576911518317, 0.20924175102261847};
+  ImageType::DirectionType::InternalMatrixType m{data};
+  d.GetVnlMatrix() = m;
+  EXPECT_EQ(OE::PIR, DICOMOrientation::DirectionCosinesToOrientation(d));
+
+}
 
 TEST(DICOMOrientation, OrientationToDirectionCosines)
 {

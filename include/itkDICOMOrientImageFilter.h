@@ -6,7 +6,7 @@
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
- *         http://www.apache.org/licenses/LICENSE-2.0.txt
+ *         https://www.apache.org/licenses/LICENSE-2.0.txt
  *
  *  Unless required by applicable law or agreed to in writing, software
  *  distributed under the License is distributed on an "AS IS" BASIS,
@@ -62,11 +62,10 @@ namespace itk
  * \ingroup SimpleITKFilters
  */
 template <typename TInputImage>
-class ITK_TEMPLATE_EXPORT DICOMOrientImageFilter
-  : public ImageToImageFilter<TInputImage, TInputImage>
+class ITK_TEMPLATE_EXPORT DICOMOrientImageFilter : public ImageToImageFilter<TInputImage, TInputImage>
 {
 public:
-  ITK_DISALLOW_COPY_AND_ASSIGN(DICOMOrientImageFilter);
+  ITK_DISALLOW_COPY_AND_MOVE(DICOMOrientImageFilter);
 
   /** Standard class type aliases. */
   using Self = DICOMOrientImageFilter;
@@ -140,7 +139,7 @@ public:
   void
   GenerateOutputInformation() override;
 
-  static_assert(ImageDimension == 3, "Only 3 dimensional images are support!" );
+  static_assert(ImageDimension == 3, "Only 3 dimensional images are support!");
 
 protected:
   DICOMOrientImageFilter();
@@ -154,7 +153,7 @@ protected:
 
   /*** Member functions used by GenerateData: */
   void
-  DeterminePermutationsAndFlips(DICOMOrientation desired,  DICOMOrientation given);
+  DeterminePermutationsAndFlips(DICOMOrientation desired, DICOMOrientation given);
 
   /** Returns true if a permute is required. Returns false otherwise. */
   bool

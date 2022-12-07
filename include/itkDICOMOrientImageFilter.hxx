@@ -6,7 +6,7 @@
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
  *
- *         http://www.apache.org/licenses/LICENSE-2.0.txt
+ *         https://www.apache.org/licenses/LICENSE-2.0.txt
  *
  *  Unless required by applicable law or agreed to in writing, software
  *  distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,7 +29,7 @@ namespace itk
 
 template <typename TInputImage>
 DICOMOrientImageFilter<TInputImage>::DICOMOrientImageFilter()
-  : m_FlipAxes{false}
+  : m_FlipAxes{ false }
 {
   for (unsigned int dimension = 0; dimension < ImageDimension; ++dimension)
   {
@@ -159,7 +159,7 @@ DICOMOrientImageFilter<TInputImage>::SetDesiredCoordinateOrientation(const std::
 {
   DICOMOrientation o(desired);
 
-  if ( OrientationEnum(o) == OrientationEnum::INVALID)
+  if (OrientationEnum(o) == OrientationEnum::INVALID)
   {
     itkWarningMacro("Invalid desired coordinate direction string: \"" << desired << "\"!");
   }
@@ -301,7 +301,7 @@ DICOMOrientImageFilter<TInputImage>::VerifyPreconditions() ITKv5_CONST
 
   if (this->m_DesiredCoordinateOrientation == OrientationEnum::INVALID)
   {
-    itkExceptionMacro(<<"DesiredCoordinateOrientation is 'INVALID'.")
+    itkExceptionMacro(<< "DesiredCoordinateOrientation is 'INVALID'.");
   }
 }
 
